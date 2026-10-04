@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inquire | Galera Escapes, Puerto Galera</title>
+<meta name="description" content="Send a booking inquiry to Galera Escapes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">GE</span> Galera Escapes</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="tours.html">Tours</a><a href="packages.html">Packages</a><a href="gallery.html">Gallery</a><a href="destination.html">Destination</a><a href="guide.html">Travel Guide</a><a href="inquiry.html" aria-current="page">Inquire</a><a href="contact.html">Contact</a></nav>
+</header>
+<main id="main">
+<section id="inquiry" class="wrap">
+  <h1>Send an inquiry</h1>
+  <p class="lead">Tell us your plans and we will reply within 24 hours. We only ask for what we need to prepare a quote.</p>
+  <form id="inquiryForm" novalidate>
+    <label>Your name<input type="text" id="name" name="name" required autocomplete="name"></label>
+    <label>Email<input type="email" id="email" name="email" required autocomplete="email"></label>
+    <label>Package or tour
+      <select id="tour" name="tour" required>
+        <option value="">Choose one</option>
+        <option>Day Escape</option><option>Weekend Barkada</option><option>Culture and Nature</option>
+        <option>Island Hopping</option><option>Snorkeling Trip</option><option>Waterfall and Village Visit</option>
+      </select></label>
+    <label>Preferred date<input type="date" id="date" name="date" required></label>
+    <label>Number of guests<input type="number" id="guests" name="guests" min="1" max="30" value="2" required></label>
+    <label class="full">Message (optional)<textarea id="message" name="message" rows="4"></textarea></label>
+    <button class="btn" type="submit">Send inquiry</button>
+    <p id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+<footer>
+  <p><strong>Galera Escapes</strong> · White Beach Road, Puerto Galera · hello@galeraescapes.example</p>
+  <p><a href="index.html">Home</a> · <a href="packages.html">Packages</a> · <a href="guide.html">FAQ</a> · <a href="contact.html">Contact</a> · <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> · <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></p>
+  <p class="small">&copy; <span id="year">2026</span> Galera Escapes. Created for the Applied Business Tools and Technologies in Tourism final exam. Business details are fictional. We only use the information you send to reply to your inquiry.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
